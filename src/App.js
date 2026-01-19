@@ -7,49 +7,94 @@ import UK from "./pages/UK";
 import US from "./pages/US";
 import EU from "./pages/EU";
 import Contact from "./pages/Contact";
+import PrivacyPolicy from "./pages/PrivacyPolicy";
 
 function App() {
   return (
     <div className="app-wrapper">
-      {/* ================= TOP BAR ================= */}
-      <div className="top-bar">
-        <div className="top-item">
-          <img src="/image/phone.jpg" alt="Phone" className="icon" />
-          <span>+91 87221 69966</span>
+
+      {/* ================= FIXED HEADER ================= */}
+      <header className="header">
+
+        {/* TOP BAR */}
+        <div className="top-bar">
+          <a href="tel:+918722169966" className="top-item">
+            <img src="/image/phone.jpg" alt="Phone" className="icon" />
+            <span>+91 87221 69966</span>
+          </a>
+
+          <a
+            href="https://wa.me/918722169966"
+            target="_blank"
+            rel="noopener noreferrer"
+            className="top-item"
+          >
+            <img src="/image/whats app.webp" alt="WhatsApp" className="icon" />
+            <span>WhatsApp</span>
+          </a>
         </div>
 
-        <a
-          href="https://wa.me/918722169966"
-          target="_blank"
-          rel="noopener noreferrer"
-          className="top-item"
-        >
-          <img src="/image/whats app.webp" alt="WhatsApp" className="icon" />
-          <span>WhatsApp</span>
-        </a>
-      </div>
+        {/* NAVBAR (UNCHANGED) */}
+        <nav className="navbar">
+          <div className="logo-container">
+            <img
+              src="/image/companylogo.jpeg"
+              alt="VisaConnectAssis"
+              className="logo-img"
+            />
+            <span className="logo-text">VisaConnectAssis</span>
+          </div>
 
-      {/* ================= NAVBAR ================= */}
-      <nav className="navbar">
-        <div className="logo-container">
-          <img
-            src="/image/companylogo.jpeg"
-            alt="VisaConnect Assis"
-            className="logo-img"
-          />
-          <span className="logo-text">VisaConnect Assis</span>
-        </div>
+          <ul className="nav-menu">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
 
-        <ul>
-          <li><Link to="/">Home</Link></li>
-          <li><Link to="/about">About Us</Link></li>
-          <li><Link to="/australia-visa">Australian Visas</Link></li>
-          <li><Link to="/uk-visa">UK Visas</Link></li>
-          <li><Link to="/us-visa">US Visas</Link></li>
-          <li><Link to="/eu-citizenship">EU Citizenship</Link></li>
-          <li><Link to="/contact">Contact</Link></li>
-        </ul>
-      </nav>
+            {/* AUSTRALIA */}
+            <li className="dropdown">
+              <span className="dropdown-title">Australian Visas</span>
+              <ul className="dropdown-menu">
+                <li><Link to="/australia-visa">Tourist Visa</Link></li>
+                <li><Link to="/australia-visa">Visitor Visa</Link></li>
+                <li><Link to="/australia-visa">Business Visa</Link></li>
+              </ul>
+            </li>
+
+            {/* UK */}
+            <li className="dropdown">
+              <span className="dropdown-title">UK Visas</span>
+              <ul className="dropdown-menu">
+                <li><Link to="/uk-visa">Tourist Visa</Link></li>
+                <li><Link to="/uk-visa">Visitor Visa</Link></li>
+                <li><Link to="/uk-visa">Business Visa</Link></li>
+              </ul>
+            </li>
+
+            {/* US */}
+            <li className="dropdown">
+              <span className="dropdown-title">US Visas</span>
+              <ul className="dropdown-menu">
+                <li><Link to="/us-visa">US Tourist Visa (B2)</Link></li>
+                <li><Link to="/us-visa">US Visitor Visa (B2)</Link></li>
+                <li><Link to="/us-visa">US Business Visa (B1)</Link></li>
+                <li><Link to="/us-visa">US B1/B2 Visa</Link></li>
+                <li><Link to="/us-visa">US H1 / H1B Work Visa</Link></li>
+              </ul>
+            </li>
+
+            {/* EU */}
+            <li className="dropdown">
+              <span className="dropdown-title">EU Citizenship</span>
+              <ul className="dropdown-menu">
+                <li><Link to="/eu-citizenship">Schengen Tourist Visa</Link></li>
+                <li><Link to="/eu-citizenship">Schengen Visitor Visa</Link></li>
+                <li><Link to="/eu-citizenship">Business Visa</Link></li>
+              </ul>
+            </li>
+
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
+      </header>
 
       {/* ================= PAGE CONTENT ================= */}
       <main className="content">
@@ -61,50 +106,75 @@ function App() {
           <Route path="/us-visa" element={<US />} />
           <Route path="/eu-citizenship" element={<EU />} />
           <Route path="/contact" element={<Contact />} />
+          <Route path="/privacy-policy" element={<PrivacyPolicy />} />
         </Routes>
       </main>
 
-      {/* ================= FOOTER ================= */}
+      {/* ================= FOOTER (UPDATED ONLY) ================= */}
       <footer className="footer">
         <div className="footer-container">
+
+          {/* COLUMN 1 */}
           <div className="footer-column">
             <img
               src="/image/companylogo.jpeg"
-              alt="Footer Logo"
+              alt="VisaConnect Assis"
               className="footer-logo"
             />
             <p>
-              Trusted passport and visa consultancy offering expert guidance and
-              hassle-free processing worldwide.
+              VisaConnect Assis is a private consultancy providing guidance for
+              tourist, visitor, and business visa applications.
             </p>
+
+            {/* SOCIAL ICONS */}
+            <div className="footer-social">
+              <a href="https://wa.me/918722169966" target="_blank" rel="noreferrer">
+                <img src="/image/whats app.webp" alt="WhatsApp" />
+              </a>
+              <a href="https://www.instagram.com/visaconnectassis/" target="_blank" rel="noreferrer">
+                <img src="/image/insatgram.png" alt="Instagram" />
+              </a>
+              <a href="https://www.facebook.com/profile.php?id=61570025681917#" target="_blank" rel="noreferrer">
+                <img src="/image/facebook.png" alt="Facebook" />
+              </a>
+              <a href="https://www.youtube.com/@visaconnectassis" target="_blank" rel="noreferrer">
+                <img src="/image/youtube1.png" alt="Youtube" />
+              </a>
+              <a href="https://www.linkedin.com/in/visaconnectassis/" target="_blank" rel="noreferrer">
+                <img src="/image/linkedin.png" alt="LinkedIn" />
+              </a>
+            </div>
           </div>
 
+          {/* COLUMN 2 */}
           <div className="footer-column">
             <h4>Quick Links</h4>
             <ul>
               <li><Link to="/">Home</Link></li>
               <li><Link to="/about">About Us</Link></li>
               <li><Link to="/contact">Contact</Link></li>
+              <li><Link to="/privacy-policy">Privacy Policy</Link></li>
             </ul>
           </div>
 
+          {/* COLUMN 3 */}
           <div className="footer-column">
             <h4>Contact</h4>
-            <p>📞 +91 87221 69966</p>
-            <p>📍2nd Floor, Jattappa Complex, 10, Kanakapura Main Rd, Yelachenahalli, Kumaraswamy Layout, Bengaluru, Karnataka 560078</p>
-
-            <a
-              href="https://wa.me/918722169966"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="footer-whatsapp"
-            >
-              <img src="/image/whats app.webp" alt="WhatsApp" />
-              Chat on WhatsApp
-            </a>
-
-
+            <p>📞 <a href="tel:+918722169966">+91 87221 69966</a></p>
+            <p>
+              📍 2nd Floor, Jattappa Complex,<br />
+              Kumaraswamy Layout,<br />
+              Bengaluru – 560078
+            </p>
           </div>
+
+        </div>
+
+        {/* DISCLAIMER */}
+        <div className="footer-disclaimer">
+          <strong>Disclaimer:</strong> VisaConnect Assis is a private consultancy.
+          We are not affiliated with any government, embassy, or immigration authority.
+          Final visa decisions are made solely by the respective authorities.
         </div>
 
         <div className="footer-bottom">
@@ -112,13 +182,6 @@ function App() {
         </div>
       </footer>
 
-      {/* BACK TO TOP */}
-      <button
-        className="back-to-top"
-        onClick={() => window.scrollTo({ top: 0, behavior: "smooth" })}
-      >
-        ↑
-      </button>
     </div>
   );
 }

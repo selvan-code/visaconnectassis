@@ -1,3 +1,4 @@
+import "./UK.css";
 function UK() {
     return (
         <div className="about-section">
