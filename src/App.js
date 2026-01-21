@@ -34,7 +34,7 @@ function App() {
           </a>
         </div>
 
-        {/* NAVBAR (UNCHANGED) */}
+        {/* NAVBAR */}
         <nav className="navbar">
           <div className="logo-container">
             <img
@@ -48,49 +48,10 @@ function App() {
           <ul className="nav-menu">
             <li><Link to="/">Home</Link></li>
             <li><Link to="/about">About Us</Link></li>
-
-            {/* AUSTRALIA */}
-            <li className="dropdown">
-              <span className="dropdown-title">Australian Visas</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/australia-visa">Tourist Visa</Link></li>
-                <li><Link to="/australia-visa">Visitor Visa</Link></li>
-                <li><Link to="/australia-visa">Business Visa</Link></li>
-              </ul>
-            </li>
-
-            {/* UK */}
-            <li className="dropdown">
-              <span className="dropdown-title">UK Visas</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/uk-visa">Tourist Visa</Link></li>
-                <li><Link to="/uk-visa">Visitor Visa</Link></li>
-                <li><Link to="/uk-visa">Business Visa</Link></li>
-              </ul>
-            </li>
-
-            {/* US */}
-            <li className="dropdown">
-              <span className="dropdown-title">US Visas</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/us-visa">US Tourist Visa (B2)</Link></li>
-                <li><Link to="/us-visa">US Visitor Visa (B2)</Link></li>
-                <li><Link to="/us-visa">US Business Visa (B1)</Link></li>
-                <li><Link to="/us-visa">US B1/B2 Visa</Link></li>
-                <li><Link to="/us-visa">US H1 / H1B Work Visa</Link></li>
-              </ul>
-            </li>
-
-            {/* EU */}
-            <li className="dropdown">
-              <span className="dropdown-title">EU Citizenship</span>
-              <ul className="dropdown-menu">
-                <li><Link to="/eu-citizenship">Schengen Tourist Visa</Link></li>
-                <li><Link to="/eu-citizenship">Schengen Visitor Visa</Link></li>
-                <li><Link to="/eu-citizenship">Business Visa</Link></li>
-              </ul>
-            </li>
-
+            <li><Link to="/australia-visa">Australia</Link></li>
+            <li><Link to="/uk-visa">UK</Link></li>
+            <li><Link to="/us-visa">USA</Link></li>
+            <li><Link to="/eu-citizenship">EU</Link></li>
             <li><Link to="/contact">Contact</Link></li>
           </ul>
         </nav>
@@ -110,7 +71,7 @@ function App() {
         </Routes>
       </main>
 
-      {/* ================= FOOTER (UPDATED ONLY) ================= */}
+      {/* ================= FOOTER ================= */}
       <footer className="footer">
         <div className="footer-container">
 
