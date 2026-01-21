@@ -1,0 +1,133 @@
+/* =====================
+   CONTACT PAGE
+===================== */
+
+.contact-page {
+    background-color: #f1f5f9;
+    padding: 80px 20px;
+}
+
+.contact-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TITLE */
+.contact-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0a3d62;
+    margin-bottom: 10px;
+}
+
+.contact-subtitle {
+    text-align: center;
+    font-size: 16px;
+    color: #555;
+    max-width: 800px;
+    margin: 0 auto 50px;
+}
+
+/* LAYOUT */
+.contact-row {
+    display: flex;
+    gap: 40px;
+}
+
+/* LEFT INFO */
+.contact-info {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.contact-info h3 {
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+.contact-info p {
+    font-size: 15px;
+    line-height: 1.7;
+    margin-bottom: 15px;
+    color: #333;
+}
+
+.contact-info a {
+    color: #0a3d62;
+    text-decoration: none;
+}
+
+.contact-info a:hover {
+    text-decoration: underline;
+}
+
+.contact-note {
+    margin-top: 20px;
+    background-color: #f5f7fa;
+    padding: 15px;
+    border-left: 4px solid #0a3d62;
+    font-size: 14px;
+}
+
+/* RIGHT FORM */
+.contact-form-box {
+    flex: 1;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.contact-form-box h3 {
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+/* FORM */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.contact-form input,
+.contact-form textarea {
+    padding: 12px 14px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+.contact-form textarea {
+    resize: none;
+}
+
+.contact-form button {
+    padding: 14px;
+    background-color: #0a3d62;
+    color: white;
+    font-size: 15px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.contact-form button:hover {
+    background-color: #083354;
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    .contact-row {
+        flex-direction: column;
+    }
+
+    .contact-title {
+        font-size: 26px;
+    }
+}
