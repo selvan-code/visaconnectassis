@@ -1,0 +1,117 @@
+/* =====================
+   EU / SCHENGEN VISA PAGE
+===================== */
+
+.eu-section {
+    background-color: #f1f5f9;
+    padding: 80px 20px;
+}
+
+.eu-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TITLE */
+.eu-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+/* INTRO */
+.eu-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    font-weight: 500;
+}
+
+/* LAYOUT */
+.eu-row {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+/* CONTENT */
+.eu-content {
+    flex: 1;
+}
+
+/* CARD */
+.eu-card {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.eu-card h3 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.eu-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* IMAGE */
+.eu-image {
+    flex: 0.9;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.eu-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* HIGHLIGHT */
+.eu-highlight {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-left: 5px solid #0a3d62;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+@media (max-width: 768px) {
+    .eu-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .eu-image {
+        justify-content: center;
+    }
+
+    .eu-image img {
+        max-width: 100%;
+    }
+
+    .eu-title {
+        font-size: 26px;
+    }
+
+    .eu-intro {
+        font-size: 16px;
+    }
+}
