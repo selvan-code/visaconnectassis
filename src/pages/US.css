@@ -1,0 +1,117 @@
+/* =====================
+   US VISA PAGE
+===================== */
+
+.us-section {
+    background-color: #f1f5f9;
+    padding: 80px 20px;
+}
+
+.us-container {
+    max-width: 1200px;
+    margin: auto;
+}
+
+/* TITLE */
+.us-title {
+    text-align: center;
+    font-size: 32px;
+    color: #0a3d62;
+    margin-bottom: 20px;
+}
+
+/* INTRO */
+.us-intro {
+    text-align: center;
+    max-width: 900px;
+    margin: 0 auto 50px;
+    font-size: 17px;
+    line-height: 1.7;
+    color: #333;
+    font-weight: 500;
+}
+
+/* LAYOUT */
+.us-row {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+}
+
+/* CONTENT */
+.us-content {
+    flex: 1;
+}
+
+/* CARD */
+.us-card {
+    background-color: #ffffff;
+    padding: 25px 30px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+}
+
+.us-card h3 {
+    color: #0a3d62;
+    margin-bottom: 10px;
+    font-size: 20px;
+}
+
+.us-card p {
+    font-size: 15px;
+    line-height: 1.7;
+    color: #444;
+}
+
+/* IMAGE */
+.us-image {
+    flex: 0.9;
+    text-align: right;
+}
+
+.us-image img {
+    width: 100%;
+    max-width: 420px;
+    border-radius: 14px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+}
+
+/* HIGHLIGHT */
+.us-highlight {
+    margin-top: 50px;
+    background-color: #ffffff;
+    padding: 20px 25px;
+    border-left: 5px solid #0a3d62;
+    border-radius: 6px;
+    font-size: 14px;
+    color: #444;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.06);
+}
+
+/* =====================
+   RESPONSIVE
+===================== */
+
+@media (max-width: 768px) {
+    .us-row {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .us-image {
+        text-align: center;
+    }
+
+    .us-image img {
+        max-width: 100%;
+    }
+
+    .us-title {
+        font-size: 26px;
+    }
+
+    .us-intro {
+        font-size: 16px;
+    }
+}

@@ -1,49 +1,75 @@
+<<<<<<< Updated upstream
+=======
+import "./UK.css";
+
+>>>>>>> Stashed changes
 function UK() {
     return (
-        <div className="about-section">
-            <h2>UK Visa Services</h2>
+        <section className="uk-section">
+            <div className="uk-container">
 
-            <p>
-                VisaConnect Assis offers complete support for UK visa applications,
-                assisting travelers, families, and business professionals with accurate
-                documentation and transparent processing. Our expert guidance helps
-                applicants apply with confidence and clarity.
-            </p>
+                <h2 className="uk-title">UK Visa Services</h2>
 
-            <h3>UK Tourist Visa</h3>
-            <p>
-                The UK Tourist Visa is suitable for individuals planning to visit the
-                United Kingdom for holidays, sightseeing, cultural exploration, or
-                short-term leisure travel. We assist with application preparation,
-                financial documentation, travel itinerary, accommodation details, and
-                overall eligibility assessment to ensure a smooth application process.
-            </p>
+                <p className="uk-intro">
+                    VisaConnect Assis offers complete support for UK visa applications,
+                    assisting travelers, families, and business professionals with
+                    accurate documentation and transparent processing.
+                </p>
 
-            <h3>UK Visitor Visa</h3>
-            <p>
-                The UK Visitor Visa is ideal for applicants who wish to visit family
-                members or friends residing in the United Kingdom. Our team supports you
-                with invitation letters, sponsor documentation, relationship proof, and
-                all required supporting documents in accordance with UK immigration
-                guidelines.
-            </p>
+                <div className="uk-row">
 
-            <h3>UK Business Visa</h3>
-            <p>
-                The UK Business Visa is designed for professionals attending business
-                meetings, conferences, training sessions, exhibitions, or short-term
-                commercial activities in the United Kingdom. We provide expert guidance
-                on employer letters, business invitations, financial records, and travel
-                compliance requirements to help ensure a hassle-free visa application.
-            </p>
+                    {/* ===== LEFT CONTENT ===== */}
+                    <div className="uk-content">
 
-            <p>
-                At VisaConnect Assis, we focus on accuracy, compliance, and timely
-                submission. Our dedicated consultants guide you through each stage of
-                the UK visa process, making your experience smooth, reliable, and
-                stress-free.
-            </p>
-        </div>
+                        <div className="uk-card">
+                            <h3>UK Tourist Visa</h3>
+                            <p>
+                                Suitable for individuals planning holidays, sightseeing,
+                                cultural exploration, or short-term leisure travel to the
+                                United Kingdom. We assist with documentation, travel itinerary,
+                                accommodation proof, and financial requirements.
+                            </p>
+                        </div>
+
+                        <div className="uk-card">
+                            <h3>UK Visitor Visa</h3>
+                            <p>
+                                Ideal for applicants visiting family or friends in the UK.
+                                We help prepare invitation letters, sponsor documents,
+                                relationship proof, and ensure compliance with UK immigration
+                                guidelines.
+                            </p>
+                        </div>
+
+                        <div className="uk-card">
+                            <h3>UK Business Visa</h3>
+                            <p>
+                                Designed for professionals attending meetings, conferences,
+                                training sessions, exhibitions, or business events. Our team
+                                assists with employer letters, business invitations, and
+                                financial documentation.
+                            </p>
+                        </div>
+
+                    </div>
+
+                    {/* ===== RIGHT IMAGE ===== */}
+                    <div className="uk-image">
+                        <img
+                            src="/image/london.jpg"
+                            alt="UK Visa Services"
+                        />
+                    </div>
+
+                </div>
+
+                <div className="uk-highlight">
+                    Our consultants ensure accuracy, compliance, and timely submission,
+                    making your UK visa process smooth, reliable, and stress-free.
+                </div>
+
+            </div>
+        </section>
     );
 }
 

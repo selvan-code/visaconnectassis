@@ -18,6 +18,7 @@ function App() {
           <span>+91 87221 69966</span>
         </div>
 
+<<<<<<< Updated upstream
         <a
           href="https://wa.me/918722169966"
           target="_blank"
@@ -50,6 +51,30 @@ function App() {
           <li><Link to="/contact">Contact</Link></li>
         </ul>
       </nav>
+=======
+        {/* NAVBAR */}
+        <nav className="navbar">
+          <div className="logo-container">
+            <img
+              src="/image/companylogo.jpeg"
+              alt="VisaConnectAssis"
+              className="logo-img"
+            />
+            <span className="logo-text">VisaConnectAssis</span>
+          </div>
+
+          <ul className="nav-menu">
+            <li><Link to="/">Home</Link></li>
+            <li><Link to="/about">About Us</Link></li>
+            <li><Link to="/australia-visa">Australia</Link></li>
+            <li><Link to="/uk-visa">UK</Link></li>
+            <li><Link to="/us-visa">USA</Link></li>
+            <li><Link to="/eu-citizenship">EU</Link></li>
+            <li><Link to="/contact">Contact</Link></li>
+          </ul>
+        </nav>
+      </header>
+>>>>>>> Stashed changes
 
       {/* ================= PAGE CONTENT ================= */}
       <main className="content">
